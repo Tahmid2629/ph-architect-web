@@ -91,6 +91,9 @@ header{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+.team-image{
+    size: 100%;
+}
 .team-content{
     max-width: 540px;
 }
@@ -134,9 +137,19 @@ header{
     }
     .team-content{
         margin-bottom: 30px;
+        padding: 0px 20px;
     }
     .team-images{
         grid-template-columns: repeat(1, 1fr);
     }
     
+}
+/* Responsive for medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .quick-feature{
+        flex-direction: column-reverse;
+    }
+    .team-content{
+        margin-bottom: 30px;
+    } 
 }
