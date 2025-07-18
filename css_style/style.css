@@ -195,6 +195,42 @@ header{
     font-size: 2.8rem;
     font-weight: 600;
 }
+/* Sponsor section style */
+.sponsor{
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.sponsor-title-container{
+    max-width: 540px;
+    margin: 0px auto;
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.sponsor-title-description{
+    margin-bottom: 50px;
+
+}
+.sponsor-images{
+    justify-content: space-between;
+}
+.sponsor-img{
+    filter: grayscale(100%);
+}
+footer{
+    max-width: 1440px;
+    margin: 50px auto 0px;
+    background-color: rgba(255, 144, 14, 0.1); ;
+}
+.footer-line{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 39px;
+    text-align: center;
+}
 /* Responsive style for small devices */
 
 @media screen and (max-width:576px) {
@@ -203,7 +239,8 @@ header{
     }
     .nav-title , 
     .features-to-enjoy ,
-    .fact-cards{
+    .fact-cards , 
+    .sponsor-images{
         flex-direction: column;
     }
     .nav-lists{
@@ -217,7 +254,8 @@ header{
         flex-direction: column-reverse;
     }
     .team-content ,
-    .fact-title-container{
+    .fact-title-container , 
+    .sponsor-title-container{
         margin-bottom: 30px;
         padding: 0px 20px;
     }
@@ -234,6 +272,11 @@ header{
         max-width: 75%;
         margin: 10px auto;
         gap: 20px;
+    }
+    .sponsor-img{
+        width: 50%;
+        margin: 30px auto;
+        text-align: center;
     }
 }
 /* Responsive for medium devices */
@@ -263,5 +306,19 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+    .sponsor-images{
+        width: 50%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .sponsor-img{
+        text-align: center;
+    }
+    .telerama-img{
+         grid-column: 1 / span 2;
+         text-align: center;
     }
 }
