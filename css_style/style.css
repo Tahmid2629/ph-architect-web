@@ -131,6 +131,9 @@ header{
     border-left: 5px solid rgba(255, 144, 14, 1);
     margin-bottom: 20px;
 }
+.feature-title-description{
+    margin-bottom: 20px;
+}
 .feature-card{
     padding: 30px;
     border-radius: 8px;
@@ -255,7 +258,8 @@ footer{
     }
     .team-content ,
     .fact-title-container , 
-    .sponsor-title-container{
+    .sponsor-title-container ,
+    .feature-title-description{
         margin-bottom: 30px;
         padding: 0px 20px;
     }
